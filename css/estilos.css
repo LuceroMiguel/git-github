@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
+    max-width: 100%;
 
 }
 
@@ -19,6 +20,7 @@
 
 /*-----------------------------Header-----------------------*/
 .header {
+    background: linear-gradient(to right, #000000, #00102e);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -123,6 +125,7 @@ header nav ul li a:hover {
 /*----------------------------Footer-------------------------*/
 
 .footer {
+    background: linear-gradient(to right, #000000, #00102e);
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(0, 162, 255);
