@@ -93,6 +93,10 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transition: 1s;
+}
+.productos>div>div:hover {
+    transform:scale(1.1)
 }
 
 .productos div div img {
@@ -116,7 +120,10 @@ header nav ul li a:hover {
     text-decoration: none;
     border-radius: 15px;
 }
-
+.productos div div a:hover{
+    background-color:rgb(78, 214, 255);
+    transition: 200ms;
+}
 /*----------------------------Footer-------------------------*/
 
 .footer {
