@@ -133,6 +133,7 @@ header nav ul li a:hover {
     background-color: rgb(0, 162, 255);
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
     padding: 20px;
     grid-area: footer;
 }
@@ -175,10 +176,12 @@ header nav ul li a:hover {
 }
 
 /*------------------------------------Página Contacto--------------------*/
+
 .contacto {
+   
     width: 500px;
     height: 100%;
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(209, 209, 209);
     margin: 30px;
     padding: 30px;
 
@@ -186,7 +189,7 @@ header nav ul li a:hover {
 
 .contacto form {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 
