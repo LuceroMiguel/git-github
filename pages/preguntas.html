@@ -18,9 +18,71 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <header>
 
-        <header class="header">
+        <section class="header-bootstrap">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.jpg" alt="logo" width="350px" height="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="combos.html">Combos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="equiposArmados.html">Equipos Armados</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="perifericos.html" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Periféricos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="perifericos.html">Teclados</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Mouse</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Mouse Pads</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Headsets</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Micrófonos</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Altavoces</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Webcams</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Joysticks</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Volantes</a></li>
+                                    <li><a class="dropdown-item" href="perifericos.html">Discos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <div class="grid-container">
+        <!-- <header class="header">
             <img src="../images/logo.jpg" alt="logo" width="500">
             <nav>
                 <ul>
@@ -32,11 +94,11 @@
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
 
         <main class="main">
             <section>
-                <h1>Pregúntas frecuentes.</h1>
+                <h2>Pregúntas frecuentes.</h2>
                 <div class="accordion" id="accordionExample">
 
                     <div class="accordion-item">
@@ -50,8 +112,13 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <strong>¿El precio que figura en la web es el precio final?.</strong>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque doloribus ea earum. Delectus, quos excepturi consequuntur vitae ducimus autem. Illum perspiciatis neque officia quas rem illo recusandae nemo eos!
-                                Voluptate consequatur cupiditate beatae nihil maiores illum animi cumque ipsum iure ducimus assumenda ut molestiae debitis ab ratione labore id possimus asperiores optio molestias, illo delectus consectetur velit. Laborum, quia.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque doloribus ea
+                                    earum. Delectus, quos excepturi consequuntur vitae ducimus autem. Illum perspiciatis
+                                    neque officia quas rem illo recusandae nemo eos!
+                                    Voluptate consequatur cupiditate beatae nihil maiores illum animi cumque ipsum iure
+                                    ducimus assumenda ut molestiae debitis ab ratione labore id possimus asperiores
+                                    optio
+                                    molestias, illo delectus consectetur velit. Laborum, quia.</p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +134,11 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <strong>¿Cuáles son las formas de pago?.</strong>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consequatur nostrum eum illo consectetur. Officiis blanditiis commodi, molestias minus expedita culpa quos sit. Expedita, esse itaque mollitia pariatur modi repellendus.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis consequatur nostrum
+                                    eum
+                                    illo consectetur. Officiis blanditiis commodi, molestias minus expedita culpa quos
+                                    sit.
+                                    Expedita, esse itaque mollitia pariatur modi repellendus.</p>
                             </div>
                         </div>
                     </div>
@@ -83,7 +154,10 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <strong>¿Cómo gestiono el envío de mi pedido?.</strong>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tenetur blanditiis illum corporis ad quam culpa eius. Numquam omnis doloremque, recusandae accusantium quasi molestias ipsa, nam magni quis, debitis sit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tenetur blanditiis
+                                    illum
+                                    corporis ad quam culpa eius. Numquam omnis doloremque, recusandae accusantium quasi
+                                    molestias ipsa, nam magni quis, debitis sit.</p>
                             </div>
                         </div>
                     </div>
@@ -99,8 +173,14 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <strong>¿Cómo utilizo el servicio de PosVenta y garantías?.</strong>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, similique commodi eveniet beatae dolorum earum aspernatur quia doloribus suscipit voluptatum vero repellat omnis sed ratione quos optio modi quae debitis!
-                                Dolorum perferendis totam tenetur quo corrupti? Eligendi quibusdam a perferendis eum velit tempore voluptate rem eos incidunt accusantium recusandae iste reiciendis nostrum asperiores, ut, itaque laborum voluptatibus, exercitationem natus ab.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, similique commodi
+                                    eveniet beatae dolorum earum aspernatur quia doloribus suscipit voluptatum vero
+                                    repellat
+                                    omnis sed ratione quos optio modi quae debitis!
+                                    Dolorum perferendis totam tenetur quo corrupti? Eligendi quibusdam a perferendis eum
+                                    velit tempore voluptate rem eos incidunt accusantium recusandae iste reiciendis
+                                    nostrum
+                                    asperiores, ut, itaque laborum voluptatibus, exercitationem natus ab.</p>
                             </div>
                         </div>
                     </div>
@@ -117,9 +197,20 @@
                             <div class="accordion-body">
                                 <strong>¿Cual es el plazo limite de tiempo para comprar un producto en
                                     promocion?.</strong>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima nesciunt, quia at odio veniam ab deleniti molestiae aliquam ut dicta numquam pariatur adipisci delectus illum iusto exercitationem esse voluptas?
-                                Facilis nihil odit dolores voluptatem non velit distinctio magni consequuntur ut ipsa, dolor labore! Corporis tempore magnam expedita quos cupiditate accusantium, illum architecto, minima ipsam sed maxime odit veniam asperiores!
-                                Exercitationem cumque quas consequuntur facere non, recusandae illo molestias! Consectetur est nostrum excepturi ratione corporis! Tempore excepturi saepe optio quis! Labore aspernatur sequi quae incidunt optio minima doloremque consequuntur atque.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima nesciunt,
+                                    quia at
+                                    odio veniam ab deleniti molestiae aliquam ut dicta numquam pariatur adipisci
+                                    delectus
+                                    illum iusto exercitationem esse voluptas?
+                                    Facilis nihil odit dolores voluptatem non velit distinctio magni consequuntur ut
+                                    ipsa,
+                                    dolor labore! Corporis tempore magnam expedita quos cupiditate accusantium, illum
+                                    architecto, minima ipsam sed maxime odit veniam asperiores!
+                                    Exercitationem cumque quas consequuntur facere non, recusandae illo molestias!
+                                    Consectetur est nostrum excepturi ratione corporis! Tempore excepturi saepe optio
+                                    quis!
+                                    Labore aspernatur sequi quae incidunt optio minima doloremque consequuntur atque.
+                                </p>
                             </div>
                         </div>
                     </div>
