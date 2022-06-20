@@ -230,7 +230,8 @@ header nav ul li a:hover {
 /*------------Responsive Design------------*/
 
 /*----------Desktop----------------*/
-@media (max-width: 1799px) {}
+@media (max-width: 1799px) {
+}
 
 /*--------------Tablet-------------*/
 @media (max-width: 1201px) {
