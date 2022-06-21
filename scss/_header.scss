@@ -1,0 +1,39 @@
+.header {
+    background: linear-gradient(to right, #000000, #00102e);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 200px;
+    grid-area: header;
+
+    img {
+        align-items: center;
+        width: 500px;
+        height: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 8px;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: rgb(0, 162, 255);
+
+                &:hover {
+                    color: azure;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+}
