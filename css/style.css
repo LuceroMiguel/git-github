@@ -33,29 +33,30 @@
   transition: 300ms;
 }
 
-.main {
+main {
   grid-area: main;
 }
-.main h2 {
+main h2 {
   background-color: rgb(0, 153, 255);
   text-align: center;
   color: rgb(234, 240, 255);
 }
-.main .productos {
+
+.productos {
   margin: 0px 0 20px 0;
 }
-.main .productos h2 {
+.productos h2 {
   text-align: center;
   background-color: rgb(0, 153, 255);
   color: rgb(234, 240, 255);
 }
-.main .productos div {
+.productos > div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-.main .productos div div div {
+.productos > div > div {
   margin: 20px 0 20px 0;
   width: 300px;
   height: 400px;
@@ -64,50 +65,188 @@
   box-shadow: 0 2px 2px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   transition: 1s;
 }
-.main .productos div div div a:hover {
+.productos > div > div:hover {
   transform: scale(1.1);
 }
-.main .productos div div div img {
+.productos div div img {
   width: 250px;
   height: 250px;
 }
-.main .productos div div div p {
+.productos div div p {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.main .productos div div div a {
+.productos div div a {
   padding: 10px;
   box-shadow: 0 0px 2px rgb(0, 0, 0);
-  margin: 20px;
-  font-weight: 900;
+  margin: 10px;
+  font-weight: 500;
   font-size: 16px;
   color: black;
   background-color: rgb(5, 134, 255);
   text-decoration: none;
   border-radius: 15px;
 }
-.main .productos div div div a:hover {
+.productos div div a:hover {
   background-color: rgb(78, 214, 255);
+  color: aliceblue;
   transition: 200ms;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
-  max-width: 100%;
+.sobrenos .fond {
+  background-image: url(/images/fondo.jpg);
+  width: 100%;
+  height: 400px auto;
+  text-align: center;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas: "header header" "main main" "footer footer";
+.text {
+  color: white;
+  padding: 10%;
+}
+.text h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.text p {
+  font-size: 22px;
+}
+
+.footer {
+  background: linear-gradient(to right, #000000, #00102e);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(0, 162, 255);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  grid-area: footer;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  transition: 500ms;
+}
+.footer a:hover {
+  color: rgb(0, 162, 255);
+}
+.footer a img {
+  width: 200px;
+  height: 150px;
+}
+.footer a h2 {
+  text-align: center;
+}
+.footer nav a {
+  margin: 5px;
+}
+.footer nav a img {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+.footer nav a img:hover {
+  transform: scale(1.4);
+}
+
+/*----------Desktop----------------*/
+@media (max-width: 1799px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    max-width: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+}
+/*--------------Tablet-------------*/
+@media (max-width: 1201px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .header nav ul li a {
+    font-size: 16px;
+  }
+  .footerNav {
+    display: none;
+  }
+}
+/*------------------Mobile------------------*/
+@media (max-width: 599px) {
+  .header {
+    width: 100%;
+    height: auto;
+  }
+  .header img {
+    width: 100%;
+  }
+  .header nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header nav ul li a {
+    font-size: 14px;
+  }
+  .footer img {
+    width: 150px;
+    height: 100px;
+  }
+  .footer nav img {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  .footerNav {
+    display: none;
+  }
+  .contacto {
+    width: 70%;
+  }
+}
+.contacto {
+  width: 500px;
+  height: 100%;
+  background-color: rgb(209, 209, 209);
+  margin: 30px;
+  padding: 30px;
+}
+.contacto form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.contacto h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.button-enviar {
+  font-size: 13px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  text-decoration: none;
+}
+.button-enviar:hover {
+  background-color: rgb(0, 104, 240);
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

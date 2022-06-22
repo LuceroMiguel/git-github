@@ -1,0 +1,94 @@
+/*----------Desktop----------------*/
+@media (max-width: 1799px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Titillium Web', sans-serif;
+        max-width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr auto 0.5fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+
+    }
+}
+
+/*--------------Tablet-------------*/
+@media (max-width: 1201px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerNav {
+        display: none;
+    }
+}
+
+/*------------------Mobile------------------*/
+@media (max-width: 599px) {
+    .header {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        img {
+            width: 150px;
+            height: 100px;
+        }
+
+        nav {
+            img {
+                align-items: center;
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    .footerNav {
+        display: none;
+    }
+
+    .contacto {
+        width: 70%;
+    }
+
+}

@@ -1,24 +1,5 @@
 @import "header";
 @import "main";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-    max-width: 100%;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-
-}
-
-//----------------------Main----------------------------------
-
+@import "footer";
+@import "responsive";
+@import "contactopag";
