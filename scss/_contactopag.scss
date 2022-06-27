@@ -1,9 +1,9 @@
 .contacto {
+    
     width: 500px;
     height: 100%;
     background-color: rgb(209, 209, 209);
-    margin: 30px;
-    padding: 30px;
+    padding: 20px;
 
     form {
         display: flex;
@@ -11,7 +11,7 @@
         flex-direction: column;
     }
 
-    h2 {
+    h3 {
         text-transform: uppercase;
         text-decoration: underline;
         font-size: 24px;

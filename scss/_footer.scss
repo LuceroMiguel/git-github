@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(to right, #000000, #00102e);
+    background: linear-gradient(to right, #f3f3f3, #929292);
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(0, 162, 255);
@@ -11,7 +11,8 @@
     a {
         text-decoration: none;
         color: white;
-        font-weight: bold;
+        text-shadow: 0 0 5px rgb(0, 110, 255);
+        font-weight:bold;
         font-family: 'Titillium Web', sans-serif;
         transition: 500ms;
 
@@ -32,6 +33,7 @@
     }
 
     nav a {
+       
         margin: 5px;
 
         img {

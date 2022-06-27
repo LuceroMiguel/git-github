@@ -2,19 +2,21 @@ main {
 	grid-area: main;
 
 	h2 {
-		background-color: rgb(0, 153, 255);
+		background-color: rgb(0, 92, 153);
 		text-align: center;
 		color: rgb(234, 240, 255);
 	}
 }
 
 .productos {
-	margin: 0px 0 20px 0;
+	padding: 0px 0 30px 0;
+	background-color: rgb(245, 245, 245);
 
 	h2 {
 		text-align: center;
-		background-color: rgb(0, 153, 255);
+		background-color: rgb(0, 92, 153);
 		color: rgb(234, 240, 255);
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.452);
 	}
 
 	>div {
@@ -24,12 +26,13 @@ main {
 		flex-wrap: wrap;
 
 		>div {
+			background-color: rgba(243, 243, 243, 0.541);
 			margin: 20px 0 20px 0;
 			width: 300px;
 			height: 400px;
-			border-radius: 15px;
-			border: 1px solid black;
-			box-shadow: 0 2px 2px rgb(0, 0, 0.2);
+			border-radius: 10px;
+			border: 0.5px solid black;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
@@ -37,13 +40,15 @@ main {
 			transition: 1s;
 
 			&:hover {
-				transform: scale(1.1);
+				transition: all 0.2s ease-out;
+				box-shadow: 0px 4px 8px rgba(39, 39, 39, 0.562);
 			}
 		}
 	}
 
 	div {
 		div {
+			margin-bottom: 15px;
 			img {
 				width: 250px;
 				height: 250px;
@@ -51,22 +56,22 @@ main {
 
 			p {
 				font-size: 18px;
-				margin-bottom: 20px;
+				margin-bottom: 5px;
 			}
 
 			a {
-				padding: 10px;
-				box-shadow: 0 0px 2px rgb(0, 0, 0.2);
+				padding: 5px;
+				box-shadow: 0 0px 2px rgb(133, 133, 133);
 				margin: 10px;
 				font-weight: 500;
 				font-size: 16px;
 				color: black;
-				background-color: rgb(5, 134, 255);
+				background-color: rgb(255, 255, 255);
 				text-decoration: none;
-				border-radius: 15px;
+				border-radius: 5px;
 
 				&:hover {
-					background-color: rgb(78, 214, 255);
+					background-color: rgb(78, 161, 255);
 					color: aliceblue;
 					transition: 200ms;
 				}
