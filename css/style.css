@@ -229,4 +229,52 @@ main .text .buton {
   background-color: rgb(0, 114, 190);
 }
 
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  max-width: 100%;
+}
+.info .info-1 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(206, 206, 206);
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.info .info-1 i {
+  font-size: 50px;
+}
+.info .info-2 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(216, 216, 216);
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.info .info-2 i {
+  font-size: 50px;
+}
+.info .info-3 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(226, 226, 226);
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.info .info-3 i {
+  font-size: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

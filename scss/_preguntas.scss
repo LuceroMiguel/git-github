@@ -1,0 +1,39 @@
+@mixin infosection ($background){
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $background;
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    i {
+        font-size: 50px;
+    }
+}
+
+.info {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+
+
+    .info-1 {
+        @include infosection(rgb(206, 206, 206));
+    }
+
+    .info-2 {
+        @include infosection(rgb(216, 216, 216));
+
+    }
+
+    .info-3 {
+        @include infosection(rgb(226, 226, 226));
+    }
+
+}
