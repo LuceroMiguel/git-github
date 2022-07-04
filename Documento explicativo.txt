@@ -1,4 +1,5 @@
 Desarrollo Web - GG Hardstore:
 En mis archivos .html agregué propiedades de SEO como, una descripción simple de cada página,
 junto a las Keywords relacionadas con mi página web. También corroboré tener mi h1 como
-primer etiqueta de texto con el nombre de la web GG Hardstore.
+primer etiqueta de texto con el nombre de la web GG Hardstore, optimizé las imágenes de 
+mi sitio y organizé las carpetas de mi esctructuraDelProyecto.
