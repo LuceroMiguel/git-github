@@ -5,7 +5,7 @@ main .productos {
   padding: 0px 0 30px 0;
   background-color: rgb(238, 238, 238);
 }
-main .productos h2, main .productos .main form .boton, .main form main .productos .boton {
+main .productos h1 {
   text-align: center;
   background-color: rgb(0, 92, 153);
   color: rgb(234, 240, 255);
@@ -84,8 +84,13 @@ main .text p {
 main .text .buton {
   padding: 10px;
   font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.2549019608);
+  background-color: rgba(0, 0, 0, 0.6980392157);
   color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 200ms;
+}
+main .text .buton:hover {
+  color: rgb(0, 162, 255);
 }
 
 .footer {
@@ -113,7 +118,7 @@ main .text .buton {
   width: 200px;
   height: 150px;
 }
-.footer a h2, .footer a .main form .boton, .main form .footer a .boton {
+.footer a h4 {
   text-align: center;
 }
 .footer div a {
@@ -180,6 +185,10 @@ main .text .buton {
   }
   .header nav ul li a {
     font-size: 14px;
+  }
+  .productos h1 {
+    background-color: rgb(0, 92, 153);
+    font-size: 25px;
   }
   .footer img {
     width: 150px;
@@ -253,6 +262,7 @@ main .text .buton {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 5%;
+  align-items: center;
 }
 .info .info-1 i {
   font-size: 50px;
@@ -267,6 +277,7 @@ main .text .buton {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 5%;
+  align-items: center;
 }
 .info .info-2 i {
   font-size: 50px;
@@ -281,6 +292,7 @@ main .text .buton {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 5%;
+  align-items: center;
 }
 .info .info-3 i {
   font-size: 50px;

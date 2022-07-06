@@ -8,6 +8,7 @@
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 5%;
+    align-items: center;
 
     i {
         font-size: 50px;
@@ -27,6 +28,7 @@
 
     .info-1 {
         @include infosection(rgb(206, 206, 206));
+        
     }
 
     .info-2 {
